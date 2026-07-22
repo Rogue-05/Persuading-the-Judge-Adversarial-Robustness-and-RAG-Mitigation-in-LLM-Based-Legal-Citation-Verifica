@@ -1,0 +1,5 @@
+,all_trials_n,all_trials_n,all_trials_n,all_trials_pct,all_trials_pct,all_trials_pct,initial_correct_n,initial_correct_n,initial_correct_n,initial_correct_pct,initial_correct_pct,initial_correct_pct
+category,fabricated,real_wrong_content,valid,fabricated,real_wrong_content,valid,fabricated,real_wrong_content,valid,fabricated,real_wrong_content,valid
+grounded,,,,,,,,,,,,
+False,378,336,342,0.358,0.318,0.324,21,21,175,0.097,0.097,0.806
+True,0,336,342,0.0,0.496,0.504,0,248,217,0.0,0.533,0.467

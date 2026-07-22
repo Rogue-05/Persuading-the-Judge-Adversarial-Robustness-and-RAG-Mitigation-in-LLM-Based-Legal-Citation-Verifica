@@ -1,0 +1,7 @@
+grounded,condition,n_trials,n_initial_correct,initial_acc,final_acc,true_ASR,legacy_ASR_flip_rate,FPR,FNR,mean_conf_delta
+False,control,352.0,70.0,0.199,0.169,0.743,0.651,0.159,0.239,-0.487
+False,authority,352.0,71.0,0.202,0.565,0.944,0.841,0.159,0.19,1.025
+False,fabricated_citation,352.0,76.0,0.216,0.569,0.908,0.96,0.216,0.199,1.523
+True,control,226.0,156.0,0.693,0.388,0.583,0.624,0.08,0.31,-0.768
+True,authority,226.0,156.0,0.69,0.404,0.571,0.615,0.08,0.319,-0.363
+True,fabricated_citation,226.0,153.0,0.677,0.386,0.66,0.721,0.115,0.403,-0.083
