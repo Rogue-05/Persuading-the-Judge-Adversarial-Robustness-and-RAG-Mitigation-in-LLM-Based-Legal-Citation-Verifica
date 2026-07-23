@@ -1,0 +1,4 @@
+condition,n_flips,n_correct_to_incorrect,n_incorrect_to_correct,n_lateral,pct_correct_to_incorrect,pct_incorrect_to_correct,pct_lateral
+control,125,42,39,44,0.336,0.312,0.352
+authority,272,95,121,56,0.349,0.445,0.206
+fabricated_citation,117,30,61,26,0.256,0.521,0.222
