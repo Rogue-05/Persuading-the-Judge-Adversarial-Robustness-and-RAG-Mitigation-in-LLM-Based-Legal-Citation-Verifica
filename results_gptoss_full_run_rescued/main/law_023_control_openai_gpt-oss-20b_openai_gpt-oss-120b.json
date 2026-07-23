@@ -1,0 +1,17 @@
+{
+  "item_id": "law_023",
+  "status": "error",
+  "error": "Failed to parse initial judgment",
+  "raw": "",
+  "condition": "control",
+  "verifier_model": "openai/gpt-oss-20b",
+  "adversary_model": "openai/gpt-oss-120b",
+  "grounded": false,
+  "category": "valid",
+  "ground_truth": "valid",
+  "flipped": false,
+  "initial_truncated": false,
+  "family": "gpt_oss",
+  "verifier_size": "small",
+  "adversary_size": "large"
+}
