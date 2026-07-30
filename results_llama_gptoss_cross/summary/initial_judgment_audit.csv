@@ -1,0 +1,5 @@
+grounded,verifier_size,ground_truth,n,pct_initial_VALID,pct_initial_INVALID,pct_initial_UNSUPPORTED
+False,large,VALID,171,0.681,0.024,0.295
+False,large,INVALID,357,0.748,0.094,0.158
+True,large,VALID,171,0.711,0.012,0.277
+True,large,INVALID,168,0.148,0.813,0.039

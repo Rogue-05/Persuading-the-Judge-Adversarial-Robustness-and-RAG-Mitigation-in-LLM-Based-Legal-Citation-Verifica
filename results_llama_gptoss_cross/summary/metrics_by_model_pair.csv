@@ -1,0 +1,4 @@
+verifier_model,adversary_model,verifier_size,adversary_size,condition,n_trials,n_initial_correct,initial_acc,final_acc,true_ASR,legacy_flip_rate,mean_conf_delta
+meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,large,large,authority,289,128,0.464,0.505,0.906,0.903,0.967
+meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,large,large,control,289,133,0.482,0.321,0.556,0.55,-0.624
+meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,large,large,fabricated_citation,289,128,0.464,0.43,0.594,0.633,-0.586

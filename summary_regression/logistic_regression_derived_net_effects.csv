@@ -1,0 +1,7 @@
+Subgroup,Formula,Net_LogOdds,Net_OR
+GPT-OSS Ungrounded Auth vs Ctrl,β_Auth,1.2724807097510082,3.5696969696969774
+GPT-OSS Grounded Auth vs Ctrl,β_Auth + β_Auth×Gnd,1.3092333149834297,3.703333333333336
+Llama Ungrounded Auth vs Ctrl,β_Auth + β_Auth×Llama,2.3935150643058103,10.951923076923086
+Llama Grounded Auth vs Ctrl,β_Auth + β_Auth×Gnd + β_Auth×Llama + β_Auth×Gnd×Llama,0.2603438350003002,1.2973760932944605
+GPT-OSS Ungrounded Fab vs Ctrl,β_Fab,-0.430090155413551,0.6504504504504521
+Llama Ungrounded Fab vs Ctrl,β_Fab + β_Fab×Llama,1.3243166608439942,3.759615384615389

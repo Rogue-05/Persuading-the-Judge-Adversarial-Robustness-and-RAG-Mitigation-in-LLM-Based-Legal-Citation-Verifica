@@ -1,0 +1,13 @@
+,0
+N,1277.0
+G_clusters,160.0
+df,2.0
+loglik_model1,-677.7901938273399
+loglik_model2,-681.4398141852803
+LR_statistic,7.299240715880842
+naive_chi2_p,0.02600099797767863
+cluster_bootstrap_p,0.613
+cluster_bootstrap_n_valid,1000.0
+cluster_bootstrap_n_failed,0.0
+n_boot,1000.0
+seed,42.0

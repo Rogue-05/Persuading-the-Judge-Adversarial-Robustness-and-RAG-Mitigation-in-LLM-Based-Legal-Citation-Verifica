@@ -1,0 +1,14 @@
+metric,value
+total_trials_loaded,3468
+dropped_bad_status,5
+dropped_null_initial,0
+initially_correct_pre_final_filter,1335
+dropped_null_final_judgment,58
+final_analysis_N,1277
+item_clusters_G,160
+model1_converged,True
+model1_iterations,7
+model2_converged,True
+model2_iterations,6
+model3_converged,True
+model3_iterations,7

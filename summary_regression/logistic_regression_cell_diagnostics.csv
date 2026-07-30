@@ -1,0 +1,13 @@
+family,grounded,condition,n,n_c2i,c2i_rate
+gpt_oss,False,authority,106,62,0.5849
+gpt_oss,False,control,106,30,0.283
+gpt_oss,False,fabricated_citation,93,19,0.2043
+gpt_oss,True,authority,108,33,0.3056
+gpt_oss,True,control,113,12,0.1062
+gpt_oss,True,fabricated_citation,96,11,0.1146
+llama,False,authority,69,67,0.971
+llama,False,control,69,52,0.7536
+llama,False,fabricated_citation,75,69,0.92
+llama,True,authority,138,89,0.6449
+llama,True,control,156,91,0.5833
+llama,True,fabricated_citation,148,101,0.6824

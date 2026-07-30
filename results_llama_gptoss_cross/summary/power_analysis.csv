@@ -1,0 +1,5 @@
+grounded,comparison,condition_true_ASR,control_true_ASR,delta_true_ASR,n_condition,n_control,cohens_h,p_adjusted_holm,significant,achieved_power,MDE_cohens_h_80pow,MDE_true_ASR_delta_80pow_approx
+False,authority_vs_control,0.98,0.706,0.274,49,51,0.862,0.0005508497501930877,True,0.991,0.56,0.211
+False,fabricated_citation_vs_control,0.8,0.706,0.094,45,51,0.219,0.8169572393463367,False,0.188,0.573,0.214
+True,authority_vs_control,0.861,0.463,0.397,79,82,0.881,1.0511846108379469e-06,True,1.0,0.442,0.217
+True,fabricated_citation_vs_control,0.482,0.463,0.019,83,82,0.038,0.9344716406355471,False,0.057,0.436,0.214
