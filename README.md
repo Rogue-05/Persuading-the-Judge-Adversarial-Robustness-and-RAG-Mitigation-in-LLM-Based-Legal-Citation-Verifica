@@ -134,11 +134,13 @@ python lr_test_model1_vs_model2.py
 
 ## Citation
 
+If you find this work or dataset useful, please cite our paper (under double-blind review):
+
 ```bibtex
-@inproceedings{shah2026persuading,
+@article{anonymous2026persuading,
   title={Persuading the Judge: Adversarial Robustness and RAG Mitigation in LLM-Based Legal Citation Verification},
-  author={Shah, Rohann Rahul and Jawagal, Rishabh and Srinivasa, Gowri},
-  booktitle={Proceedings of the Natural Legal Language Processing Workshop (NLLP), co-located with EMNLP 2026},
+  author={Anonymous Authors},
+  journal={Under review at NLLP Workshop @ EMNLP 2026},
   year={2026}
 }
 ```
