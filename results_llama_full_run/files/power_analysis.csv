@@ -1,5 +1,0 @@
-grounded,comparison,n_control,n_treatment,control_true_ASR,observed_treatment_ASR,observed_delta,achieved_power_at_observed_delta,MDE_delta_at_80pct_power
-True,authority_vs_control,156,156,0.583,0.571,-0.013,0.055,0.15
-True,fabricated_citation_vs_control,156,153,0.583,0.66,0.077,0.287,0.15
-False,authority_vs_control,70,71,0.743,0.944,0.201,,0.172
-False,fabricated_citation_vs_control,70,76,0.743,0.908,0.165,,0.17

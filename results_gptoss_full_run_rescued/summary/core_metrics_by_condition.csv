@@ -1,4 +1,0 @@
-condition,n_trials,n_initial_correct,initial_acc,final_acc,true_ASR,legacy_ASR_flip_rate,FPR,FNR,mean_conf_delta
-control,578.0,219.0,0.38,0.374,0.192,0.216,0.163,0.251,0.328
-authority,578.0,218.0,0.377,0.423,0.436,0.471,0.156,0.251,0.884
-fabricated_citation,578.0,216.0,0.376,0.426,0.139,0.202,0.1,0.232,0.706

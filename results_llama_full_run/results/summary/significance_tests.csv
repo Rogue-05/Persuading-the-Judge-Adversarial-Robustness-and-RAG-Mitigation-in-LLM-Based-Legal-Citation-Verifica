@@ -1,3 +1,0 @@
-comparison,delta_ASR,test,p_value,n_condition,n_control,p_adjusted,reject_H0
-authority_vs_control,0.19034090909090917,Chi-Square,1.1134662468580438e-08,352,352,1.1134662468580438e-08,True
-fabricated_citation_vs_control,0.30965909090909094,Chi-Square,8.535060364355243e-25,352,352,1.7070120728710485e-24,True

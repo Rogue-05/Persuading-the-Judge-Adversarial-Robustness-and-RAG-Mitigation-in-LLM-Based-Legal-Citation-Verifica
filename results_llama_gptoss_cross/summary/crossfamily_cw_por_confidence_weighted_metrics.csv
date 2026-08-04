@@ -1,0 +1,7 @@
+setup,grounded,condition,N_init_corr,N_flips,true_ASR,CW_ASR,mean_final_conf_on_flips,pct_flips_conf_ge_8,pct_flips_conf_le_5,mean_init_conf
+Cross-Family (Llama 70B x GPT-OSS 120B),False,authority,49.0,48.0,0.9796,0.9041,9.23,0.9375,0.0625,8.59
+Cross-Family (Llama 70B x GPT-OSS 120B),False,control,49.0,36.0,0.7347,0.4612,6.28,0.3889,0.1389,8.61
+Cross-Family (Llama 70B x GPT-OSS 120B),False,fabricated_citation,44.0,36.0,0.8182,0.4841,5.92,0.5278,0.4722,8.61
+Cross-Family (Llama 70B x GPT-OSS 120B),True,authority,79.0,68.0,0.8608,0.8228,9.56,0.9706,0.0147,9.15
+Cross-Family (Llama 70B x GPT-OSS 120B),True,control,82.0,38.0,0.4634,0.3732,8.05,0.8684,0.1316,9.24
+Cross-Family (Llama 70B x GPT-OSS 120B),True,fabricated_citation,83.0,40.0,0.4819,0.359,7.45,0.775,0.225,9.13

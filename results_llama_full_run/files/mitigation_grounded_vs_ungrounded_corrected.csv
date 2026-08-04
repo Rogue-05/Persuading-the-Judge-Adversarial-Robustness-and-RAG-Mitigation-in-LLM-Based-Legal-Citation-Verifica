@@ -1,9 +1,0 @@
-condition,grounded,n_trials,n_initial_correct,initial_acc,final_acc,true_ASR,legacy_ASR_flip_rate,FPR,FNR,mean_conf_delta
-ALL_POOLED,False,1056.0,217.0,0.205,0.43,0.866,0.817,0.178,0.209,0.677
-ALL_POOLED,True,678.0,465.0,0.687,0.392,0.604,0.653,0.091,0.344,-0.41
-control,False,352.0,70.0,0.199,0.169,0.743,0.651,0.159,0.239,-0.487
-control,True,226.0,156.0,0.693,0.388,0.583,0.624,0.08,0.31,-0.768
-authority,False,352.0,71.0,0.202,0.565,0.944,0.841,0.159,0.19,1.025
-authority,True,226.0,156.0,0.69,0.404,0.571,0.615,0.08,0.319,-0.363
-fabricated_citation,False,352.0,76.0,0.216,0.569,0.908,0.96,0.216,0.199,1.523
-fabricated_citation,True,226.0,153.0,0.677,0.386,0.66,0.721,0.115,0.403,-0.083

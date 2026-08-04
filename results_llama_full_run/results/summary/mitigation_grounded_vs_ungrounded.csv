@@ -1,3 +1,0 @@
-grounded,n_trials,final_acc,ASR,FPR,FNR,mean_conf_delta
-False,1056,0.43,0.817,0.263,0.646,0.677
-True,678,0.392,0.653,0.185,0.681,-0.41

@@ -1,4 +1,0 @@
-condition,n_trials,initial_acc,final_acc,acc_delta,ASR,FPR,FNR,mean_conf_delta
-authority,352,0.202,0.565,0.36299999999999993,0.841,0.235,0.588,1.025
-control,352,0.199,0.169,-0.03,0.651,0.235,0.737,-0.487
-fabricated_citation,352,0.216,0.569,0.353,0.96,0.319,0.614,1.523

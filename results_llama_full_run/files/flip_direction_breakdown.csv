@@ -1,7 +1,0 @@
-grounded,condition,n_trials,no_flip,correct_to_incorrect,incorrect_to_correct,lateral,pct_no_flip,pct_correct_to_incorrect,pct_incorrect_to_correct,pct_lateral
-False,control,352,123,52,42,135,0.349,0.148,0.119,0.384
-False,authority,352,56,67,175,54,0.159,0.19,0.497,0.153
-False,fabricated_citation,352,14,69,192,77,0.04,0.196,0.545,0.219
-True,control,226,85,91,22,28,0.376,0.403,0.097,0.124
-True,authority,226,87,89,31,19,0.385,0.394,0.137,0.084
-True,fabricated_citation,226,63,101,36,26,0.279,0.447,0.159,0.115

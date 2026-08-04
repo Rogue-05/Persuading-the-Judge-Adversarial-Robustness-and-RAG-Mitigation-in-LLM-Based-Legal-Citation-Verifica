@@ -1,5 +1,0 @@
-grounded,comparison,condition_true_ASR,control_true_ASR,delta_true_ASR,n_condition,n_control,chi2,p_raw,p_adjusted_holm,reject_null_at_0.05
-False,authority_vs_control,0.944,0.743,0.201,71,70,9.322,0.0022638737094083164,0.009055494837633266,True
-False,fabricated_citation_vs_control,0.908,0.743,0.165,76,70,5.879,0.015322033474513714,0.04596610042354114,True
-True,authority_vs_control,0.571,0.583,-0.013,156,156,0.013,0.9087685671246204,0.9087685671246204,False
-True,fabricated_citation_vs_control,0.66,0.583,0.077,153,156,1.624,0.20258066898248225,0.4051613379649645,False
