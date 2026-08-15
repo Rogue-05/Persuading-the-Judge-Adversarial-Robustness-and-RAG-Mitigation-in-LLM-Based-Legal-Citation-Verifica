@@ -25,10 +25,8 @@ mentor_results_summary.pdf
 legal_persuasion_research_plan.md.pdf
 *.pdf
 
-# ── Dataset pilots & intermediate scratch artifacts ──
+# ── Dataset pilots ──
 dataset_pilots/
-errors_legal_dataset.json
-extra_fabricated_cases.json
 
 # ── Status reports (internal docs, not code) ──
 Status_Report*.docx
