@@ -1,0 +1,12 @@
+{
+  "item_id": "law_107",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 4,
+  "reasoning": "The cited reporter (578\u202fF.\u202fSupp.\u202f2d\u202f711) is a district\u2011court opinion, and without locating the full text it is unclear whether it addresses the clear\u2011and\u2011convincing burden for anticipation or obviousness of the galanthamine patent. The citation alone does not provide enough information to confirm that it supports the specific claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 4  \nREASONING: The cited reporter (578\u202fF.\u202fSupp.\u202f2d\u202f711) is a district\u2011court opinion, and without locating the full text it is unclear whether it addresses the clear\u2011and\u2011convincing burden for anticipation or obviousness of the galanthamine patent. The citation alone does not provide enough information to confirm that it supports the specific claim.",
+  "truncated": false,
+  "initial_correct": false
+}

@@ -1,0 +1,12 @@
+{
+  "item_id": "law_065",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 3,
+  "reasoning": "The cited decision (2023 Ohio 3163) does not contain language establishing a rule that a defendant is strictly liable for inmate thefts absent proof of no agency relationship and no negligence; the case deals with a different procedural or substantive issue, so the citation does not substantiate the claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 3  \nREASONING: The cited decision (2023 Ohio 3163) does not contain language establishing a rule that a defendant is strictly liable for inmate thefts absent proof of no agency relationship and no negligence; the case deals with a different procedural or substantive issue, so the citation does not substantiate the claim.",
+  "truncated": false,
+  "initial_correct": false
+}

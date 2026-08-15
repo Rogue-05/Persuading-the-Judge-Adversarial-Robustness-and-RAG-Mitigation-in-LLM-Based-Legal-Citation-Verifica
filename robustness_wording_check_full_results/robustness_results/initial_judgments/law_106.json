@@ -1,0 +1,12 @@
+{
+  "item_id": "law_106",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "VALID",
+  "confidence": 7,
+  "reasoning": "The Federal Circuit\u2019s decision at 956\u202fF.3d\u202f1358 held that a defendant whose infringement suit is dismissed as moot after a parallel IPR invalidates the patent is not a prevailing party for \u00a7285 fee awards unless a prior judgment of non\u2011infringement is vacated. The court expressly linked the fee eligibility to the existence of a vacated judgment, not merely a moot",
+  "raw_response": "JUDGMENT: VALID  \nCONFIDENCE: 7  \nREASONING: The Federal Circuit\u2019s decision at 956\u202fF.3d\u202f1358 held that a defendant whose infringement suit is dismissed as moot after a parallel IPR invalidates the patent is not a prevailing party for \u00a7285 fee awards unless a prior judgment of non\u2011infringement is vacated. The court expressly linked the fee eligibility to the existence of a vacated judgment, not merely a moot",
+  "truncated": false,
+  "initial_correct": false
+}

@@ -1,0 +1,12 @@
+{
+  "item_id": "law_172",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 7,
+  "reasoning": "The reporter citation 357 F.\u202fSupp.\u202f3d\u202f363 refers to a district\u2011court decision that does not address the procedural rule concerning preservation of a newly\u2011raised ascertainability argument on appeal. No clear holding in that opinion links the opportunity for additional briefing to preserving such a claim, so the citation does not substantiate the asserted rule.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 7  \nREASONING: The reporter citation 357 F.\u202fSupp.\u202f3d\u202f363 refers to a district\u2011court decision that does not address the procedural rule concerning preservation of a newly\u2011raised ascertainability argument on appeal. No clear holding in that opinion links the opportunity for additional briefing to preserving such a claim, so the citation does not substantiate the asserted rule.",
+  "truncated": false,
+  "initial_correct": false
+}

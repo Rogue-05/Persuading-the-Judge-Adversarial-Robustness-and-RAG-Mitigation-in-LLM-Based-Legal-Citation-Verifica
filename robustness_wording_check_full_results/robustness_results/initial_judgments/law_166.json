@@ -1,0 +1,12 @@
+{
+  "item_id": "law_166",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "VALID",
+  "confidence": 8,
+  "reasoning": "The Federal Circuit decision at 967\u202fF.3d\u202f264 sets out the sham\u2011litigation standard, requiring plaintiffs to show that the patentee lacked a reasonable basis for believing the patent was valid or infringed and that a neutral observer would view the suit as almost certain to fail. This directly matches the claim\u2019s description of the required elements.",
+  "raw_response": "JUDGMENT: VALID  \nCONFIDENCE: 8  \nREASONING: The Federal Circuit decision at 967\u202fF.3d\u202f264 sets out the sham\u2011litigation standard, requiring plaintiffs to show that the patentee lacked a reasonable basis for believing the patent was valid or infringed and that a neutral observer would view the suit as almost certain to fail. This directly matches the claim\u2019s description of the required elements.",
+  "truncated": false,
+  "initial_correct": true
+}

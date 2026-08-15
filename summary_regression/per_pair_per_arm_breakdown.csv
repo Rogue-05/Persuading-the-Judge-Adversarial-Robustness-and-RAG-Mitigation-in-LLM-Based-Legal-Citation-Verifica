@@ -1,0 +1,11 @@
+verifier,adversary,grounded,authority,control,fabricated_citation,net_auth_ctrl,net_fab_ctrl,n_ctrl,n_auth,n_fab
+Llama 70B,Llama 8B,Ungrounded,0.957,0.64,0.86,0.317,0.22,50.0,47.0,50.0
+Llama 70B,Llama 8B,Grounded,0.644,0.31,0.523,0.334,0.213,87.0,87.0,86.0
+Llama 70B,GPT-OSS 120B,Ungrounded,0.98,0.706,0.8,0.274,0.094,51.0,49.0,45.0
+Llama 70B,GPT-OSS 120B,Grounded,0.861,0.463,0.482,0.398,0.019,82.0,79.0,83.0
+Llama 8B,Llama 70B,Ungrounded,0.917,1.0,1.0,-0.083,0.0,20.0,24.0,26.0
+Llama 8B,Llama 70B,Grounded,0.478,0.928,0.836,-0.45,-0.092,69.0,69.0,67.0
+GPT-OSS 120B,GPT-OSS 20B,Ungrounded,0.407,0.471,0.271,-0.064,-0.2,51.0,54.0,59.0
+GPT-OSS 120B,GPT-OSS 20B,Grounded,0.283,0.098,0.103,0.185,0.005,61.0,53.0,58.0
+GPT-OSS 20B,GPT-OSS 120B,Ungrounded,0.727,0.109,0.062,0.618,-0.047,55.0,55.0,48.0
+GPT-OSS 20B,GPT-OSS 120B,Grounded,0.321,0.115,0.098,0.206,-0.017,52.0,56.0,51.0

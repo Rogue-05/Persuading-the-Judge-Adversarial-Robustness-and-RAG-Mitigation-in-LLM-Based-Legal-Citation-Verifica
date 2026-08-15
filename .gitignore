@@ -1,37 +1,48 @@
 # ── OS / IDE ──
 .DS_Store
+**/.DS_Store
 __pycache__/
-.env
 *.pyc
+*.pyo
+.env
+.env.*
+.vscode/
+.idea/
 
-# ── Paper writing (kept on Overleaf / locally, not needed in repo) ──
+# ── Paper writing & notes (kept locally / on Overleaf) ──
+paper/
 paper_notes*.md
 paper_notes_exploratory.md
-paper/
+paper_notes_verified.md
 
 # ── Generated figures & PDFs (reproducible from scripts + CSVs) ──
 fig_confidence_profile.pdf
 fig_grounding_authority.pdf
 fig_experimental_setup.jpg
 experimental_setup
-generate_paper_figures.py
-generate_pdf.py
 results_summary.pdf
 mentor_results_summary.pdf
+legal_persuasion_research_plan.md.pdf
+*.pdf
+
+# ── Dataset pilots & intermediate scratch artifacts ──
+dataset_pilots/
+errors_legal_dataset.json
+extra_fabricated_cases.json
 
 # ── Status reports (internal docs, not code) ──
 Status_Report*.docx
-
-# ── Research plan (internal) ──
-legal_persuasion_research_plan.md.pdf
+Status_Report (1).docx
 
 # ── Obsolete / superseded notebooks ──
 nllp-gptoss-run1.ipynb
 02_main_experiment_qwen_kaggle.ipynb
 
-# ── Pre-rescue raw results (rescued versions are the canonical ones) ──
+# ── Pre-rescue raw results (rescued versions are canonical) ──
 results_gptoss_full_run/
 results_llama_full_run/
 
-# ── Zip archives ──
+# ── Archives & Temporary Files ──
 *.zip
+*.tar.gz
+*.log

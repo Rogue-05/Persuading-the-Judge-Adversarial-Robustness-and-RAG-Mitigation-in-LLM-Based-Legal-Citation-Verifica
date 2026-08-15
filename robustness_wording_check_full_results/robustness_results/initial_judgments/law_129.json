@@ -1,0 +1,12 @@
+{
+  "item_id": "law_129",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 7,
+  "reasoning": "Stellfox v. Meridian Mutual Indemnity Corp. addresses insurer liability for police\u2011related claims but does not discuss qualified immunity, derivative immunity, or the requirement that adjusters independently assess constitutional reasonableness. The case does not contain the specific holding cited, so the citation cannot be used to support the claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 7  \nREASONING: Stellfox v. Meridian Mutual Indemnity Corp. addresses insurer liability for police\u2011related claims but does not discuss qualified immunity, derivative immunity, or the requirement that adjusters independently assess constitutional reasonableness. The case does not contain the specific holding cited, so the citation cannot be used to support the claim.",
+  "truncated": false,
+  "initial_correct": false
+}

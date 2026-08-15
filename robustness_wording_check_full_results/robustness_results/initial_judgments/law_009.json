@@ -1,0 +1,12 @@
+{
+  "item_id": "law_009",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 7,
+  "reasoning": "The case reported at 441 Mass. 549 does not address the specific procedural rights under G.L.c.\u202f151B\u202f\u00a75, G.L.c.\u202f30A, or the Lavelle precedent; it concerns a different legal issue, so the citation cannot be used to verify the claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 7  \nREASONING: The case reported at 441 Mass. 549 does not address the specific procedural rights under G.L.c.\u202f151B\u202f\u00a75, G.L.c.\u202f30A, or the Lavelle precedent; it concerns a different legal issue, so the citation cannot be used to verify the claim.",
+  "truncated": false,
+  "initial_correct": false
+}

@@ -1,0 +1,12 @@
+{
+  "item_id": "law_171",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 4,
+  "reasoning": "The cited reporter (357 F.\u202fSupp.\u202f3d\u202f363) is a district\u2011court opinion, but without reviewing its text there is no indication it addresses the forfeiture of a newly\u2011raised ascertainability methodology on appeal. Consequently, the citation does not clearly support the claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 4  \nREASONING: The cited reporter (357 F.\u202fSupp.\u202f3d\u202f363) is a district\u2011court opinion, but without reviewing its text there is no indication it addresses the forfeiture of a newly\u2011raised ascertainability methodology on appeal. Consequently, the citation does not clearly support the claim.",
+  "truncated": false,
+  "initial_correct": false
+}

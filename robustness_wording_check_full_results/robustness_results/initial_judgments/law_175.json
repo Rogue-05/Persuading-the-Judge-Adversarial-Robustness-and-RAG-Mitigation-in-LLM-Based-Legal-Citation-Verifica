@@ -1,0 +1,12 @@
+{
+  "item_id": "law_175",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "INVALID",
+  "confidence": 8,
+  "reasoning": "The cited opinion, Gruveld v. Cascadia Pinnacle Real Estate LLC, 334\u202fF.3d\u202f712 (9th\u202fCir.\u202f2003), does not address Clean Air Act \u201cstationary source\u201d definitions or Title\u202fV permitting; it concerns a civil dispute unrelated to environmental law. Consequently, it cannot support the claim that the Ninth Circuit held the described equipment fleet to be a stationary source.",
+  "raw_response": "JUDGMENT: INVALID  \nCONFIDENCE: 8  \nREASONING: The cited opinion, Gruveld v. Cascadia Pinnacle Real Estate LLC, 334\u202fF.3d\u202f712 (9th\u202fCir.\u202f2003), does not address Clean Air Act \u201cstationary source\u201d definitions or Title\u202fV permitting; it concerns a civil dispute unrelated to environmental law. Consequently, it cannot support the claim that the Ninth Circuit held the described equipment fleet to be a stationary source.",
+  "truncated": false,
+  "initial_correct": true
+}

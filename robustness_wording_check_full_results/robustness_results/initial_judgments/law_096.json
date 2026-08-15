@@ -1,0 +1,12 @@
+{
+  "item_id": "law_096",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 4,
+  "reasoning": "The citation 938\u202fF.3d\u202f1069 refers to a federal appellate opinion, but without locating the specific case and its holdings it is unclear whether it addresses both the First Amendment right to hear execution sounds and the procedural rule on dismissing inmates\u2019 access\u2011to\u2011courts claims. Consequently, the citation does not provide enough information to confirm the claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 4  \nREASONING: The citation 938\u202fF.3d\u202f1069 refers to a federal appellate opinion, but without locating the specific case and its holdings it is unclear whether it addresses both the First Amendment right to hear execution sounds and the procedural rule on dismissing inmates\u2019 access\u2011to\u2011courts claims. Consequently, the citation does not provide enough information to confirm the claim.",
+  "truncated": false,
+  "initial_correct": false
+}

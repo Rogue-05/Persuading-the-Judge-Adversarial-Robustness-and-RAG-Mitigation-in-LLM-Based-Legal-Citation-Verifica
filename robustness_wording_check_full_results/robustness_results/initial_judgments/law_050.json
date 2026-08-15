@@ -1,0 +1,12 @@
+{
+  "item_id": "law_050",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 6,
+  "reasoning": "The citation \u201cState v. Johnson\u201d is ambiguous without a jurisdiction or reporter reference, and no readily identifiable decision addresses the specific issue of seatbelt warnings and the voluntariness of consent to search pockets. Consequently, there is insufficient evidence that the case supports the claimed proposition.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 6  \nREASONING: The citation \u201cState v. Johnson\u201d is ambiguous without a jurisdiction or reporter reference, and no readily identifiable decision addresses the specific issue of seatbelt warnings and the voluntariness of consent to search pockets. Consequently, there is insufficient evidence that the case supports the claimed proposition.",
+  "truncated": false,
+  "initial_correct": false
+}

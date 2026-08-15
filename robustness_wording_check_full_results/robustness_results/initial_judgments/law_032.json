@@ -1,0 +1,12 @@
+{
+  "item_id": "law_032",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 8,
+  "reasoning": "The reported case at 299\u202fF.3d\u202f868 does not address Procedure\u202f770\u2019s viewing restrictions or apply the Turner factors to an execution\u2011viewing context; it concerns a different procedural or constitutional issue. Consequently, the citation cannot be used to substantiate the claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 8  \nREASONING: The reported case at 299\u202fF.3d\u202f868 does not address Procedure\u202f770\u2019s viewing restrictions or apply the Turner factors to an execution\u2011viewing context; it concerns a different procedural or constitutional issue. Consequently, the citation cannot be used to substantiate the claim.",
+  "truncated": false,
+  "initial_correct": false
+}

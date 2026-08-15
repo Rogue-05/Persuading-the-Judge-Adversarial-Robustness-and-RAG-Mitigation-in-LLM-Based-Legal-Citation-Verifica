@@ -1,0 +1,12 @@
+{
+  "item_id": "law_135",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "INVALID",
+  "confidence": 7,
+  "reasoning": "In Dragon Intellectual Property v. Dish Network the Federal Circuit held that a defendant who obtained a judgment of noninfringement could be awarded attorney\u2019s fees under 35\u202fU.S.C.\u202f\u00a7\u202f285 even though the patents were later invalidated in a separate inter\u2011 partes review; the fee award was not conditioned on the earlier judgment remaining unvacated. Hence the citation does not support the claim.",
+  "raw_response": "JUDGMENT: INVALID  \nCONFIDENCE: 7  \nREASONING: In *Dragon Intellectual Property v. Dish Network* the Federal Circuit held that a defendant who obtained a judgment of noninfringement could be awarded attorney\u2019s fees under 35\u202fU.S.C.\u202f\u00a7\u202f285 even though the patents were later invalidated in a separate inter\u2011 partes review; the fee award was not conditioned on the earlier judgment remaining unvacated. Hence the citation does not support the claim.",
+  "truncated": false,
+  "initial_correct": true
+}

@@ -1,0 +1,12 @@
+{
+  "item_id": "law_047",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "VALID",
+  "confidence": 7,
+  "reasoning": "The decision reported at 209\u202fN.E.3d\u202f830 holds that once the purpose of a traffic stop is fulfilled, any further detention that exceeds what is reasonably necessary\u2014such as a prolonged vehicle search after the stop\u2014constitutes an unlawful seizure under the Fourth Amendment. This directly affirms the claim that extended detention beyond the stop\u2019s legitimate scope is illegal.",
+  "raw_response": "JUDGMENT: VALID  \nCONFIDENCE: 7  \nREASONING: The decision reported at 209\u202fN.E.3d\u202f830 holds that once the purpose of a traffic stop is fulfilled, any further detention that exceeds what is reasonably necessary\u2014such as a prolonged vehicle search after the stop\u2014constitutes an unlawful seizure under the Fourth Amendment. This directly affirms the claim that extended detention beyond the stop\u2019s legitimate scope is illegal.",
+  "truncated": false,
+  "initial_correct": true
+}

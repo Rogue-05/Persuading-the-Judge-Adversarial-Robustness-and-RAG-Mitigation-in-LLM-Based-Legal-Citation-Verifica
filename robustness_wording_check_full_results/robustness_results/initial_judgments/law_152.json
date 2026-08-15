@@ -1,0 +1,12 @@
+{
+  "item_id": "law_152",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "VALID",
+  "confidence": 8,
+  "reasoning": "The decision reported at 41\u202fF.4th\u202f83 (D.C. Cir. 2022) held that an importer\u2019s failure to disclose to CBP that imported goods were unmarked or improperly marked\u2014whether intentional or negligent\u2014constitutes a \u201creverse false claim\u201d under the FCA, because the government\u2019s payment of duties is predicated on the importer\u2019s affirmative disclosure under 19\u202fU.S.C.\u202f\u00a7\u202f1484(a)(1). This directly affirms the claim that such nondisclosure creates FCA liability without an express false statement.",
+  "raw_response": "JUDGMENT: VALID  \nCONFIDENCE: 8  \nREASONING: The decision reported at 41\u202fF.4th\u202f83 (D.C. Cir. 2022) held that an importer\u2019s failure to disclose to CBP that imported goods were unmarked or improperly marked\u2014whether intentional or negligent\u2014constitutes a \u201creverse false claim\u201d under the FCA, because the government\u2019s payment of duties is predicated on the importer\u2019s affirmative disclosure under 19\u202fU.S.C.\u202f\u00a7\u202f1484(a)(1). This directly affirms the claim that such nondisclosure creates FCA liability without an express false statement.",
+  "truncated": false,
+  "initial_correct": false
+}

@@ -1,0 +1,12 @@
+{
+  "item_id": "law_080",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 3,
+  "reasoning": "The citation \u201c2024 Pa. Super. 125\u201d refers to a Pennsylvania Superior Court decision, but without the case name or context there is no readily available indication that it addresses the procedural requirement that a PCRA court treat a Rule\u202f907 response as an amended petition. No known precedent in that reporter contains the specific holding, so the citation does not clearly support the claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 3  \nREASONING: The citation \u201c2024 Pa. Super. 125\u201d refers to a Pennsylvania Superior Court decision, but without the case name or context there is no readily available indication that it addresses the procedural requirement that a PCRA court treat a Rule\u202f907 response as an amended petition. No known precedent in that reporter contains the specific holding, so the citation does not clearly support the claim.",
+  "truncated": false,
+  "initial_correct": false
+}

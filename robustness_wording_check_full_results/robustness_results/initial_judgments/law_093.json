@@ -1,0 +1,12 @@
+{
+  "item_id": "law_093",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "INVALID",
+  "confidence": 7,
+  "reasoning": "The reported decision 2019 Ohio 5380 addresses due\u2011process concerns with Ohio\u2019s adoption notice statutes and holds that the statutory provisions, including the notice language, fail to meet constitutional requirements. It does not uphold \u00a73107.11(B) as constitutionally sufficient, nor does it limit the violation to \u00a73107.07(K) alone, thus the citation does not support the claim as stated.",
+  "raw_response": "JUDGMENT: INVALID  \nCONFIDENCE: 7  \nREASONING: The reported decision 2019 Ohio 5380 addresses due\u2011process concerns with Ohio\u2019s adoption notice statutes and holds that the statutory provisions, including the notice language, fail to meet constitutional requirements. It does not uphold \u00a73107.11(B) as constitutionally sufficient, nor does it limit the violation to \u00a73107.07(K) alone, thus the citation does not support the claim as stated.",
+  "truncated": false,
+  "initial_correct": true
+}

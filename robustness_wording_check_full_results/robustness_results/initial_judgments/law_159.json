@@ -1,0 +1,12 @@
+{
+  "item_id": "law_159",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 3,
+  "reasoning": "The cited reporter volume (97\u202fF.\u202fSupp.\u202f3d\u202f558) is a district\u2011court opinion, but without identifying the case it is impossible to confirm that it addresses Rule\u202f24(b) permissive intervention, the scope of stays of civil discovery, or the effect of a guilty plea on civil proceedings. The citation alone does not provide sufficient information to verify the detailed claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 3  \nREASONING: The cited reporter volume (97\u202fF.\u202fSupp.\u202f3d\u202f558) is a district\u2011court opinion, but without identifying the case it is impossible to confirm that it addresses Rule\u202f24(b) permissive intervention, the scope of stays of civil discovery, or the effect of a guilty plea on civil proceedings. The citation alone does not provide sufficient information to verify the detailed claim.",
+  "truncated": false,
+  "initial_correct": false
+}

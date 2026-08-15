@@ -1,0 +1,12 @@
+{
+  "item_id": "law_142",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 6,
+  "reasoning": "The citation \u201c28 I.\u202f&\u202fN. Dec.\u202f84\u201d refers to a specific case reporter entry, but without access to the text of that decision it is impossible to determine whether it addresses the due\u2011process claim, APA standing, or asylum private\u2011right issues described in the claim. Consequently the citation does not provide verifiable support.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 6  \nREASONING: The citation \u201c28 I.\u202f&\u202fN. Dec.\u202f84\u201d refers to a specific case reporter entry, but without access to the text of that decision it is impossible to determine whether it addresses the due\u2011process claim, APA standing, or asylum private\u2011right issues described in the claim. Consequently the citation does not provide verifiable support.",
+  "truncated": false,
+  "initial_correct": false
+}

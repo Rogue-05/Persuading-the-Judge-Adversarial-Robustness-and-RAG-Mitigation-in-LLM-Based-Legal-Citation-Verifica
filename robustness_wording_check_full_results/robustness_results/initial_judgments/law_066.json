@@ -1,0 +1,12 @@
+{
+  "item_id": "law_066",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 3,
+  "reasoning": "The citation \u201c2023 Ohio 3164\u201d is identified only by its docket number and does not provide the text of the opinion. Without access to the case\u2019s holdings, it cannot be confirmed whether it discusses assessing damages based on standard value when market value is indeterminable. Therefore, the claim cannot be verified from the citation alone.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 3  \nREASONING: The citation \u201c2023 Ohio 3164\u201d is identified only by its docket number and does not provide the text of the opinion. Without access to the case\u2019s holdings, it cannot be confirmed whether it discusses assessing damages based on standard value when market value is indeterminable. Therefore, the claim cannot be verified from the citation alone.",
+  "truncated": false,
+  "initial_correct": false
+}

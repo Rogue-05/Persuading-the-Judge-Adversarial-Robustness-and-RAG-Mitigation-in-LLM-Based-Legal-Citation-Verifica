@@ -1,0 +1,12 @@
+{
+  "item_id": "law_070",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "INVALID",
+  "confidence": 8,
+  "reasoning": "Aberfoyle v. Tucson City Council, 683\u202fF.3d\u202f441 (9th\u202fCir.\u202f2011) rejected the notion that the city council incurred a negligence duty from repeated written complaints about a sidewalk hazard; the court held that under Arizona tort law no actionable duty arose. Thus the citation does not support the claim.",
+  "raw_response": "JUDGMENT: INVALID  \nCONFIDENCE: 8  \nREASONING: Aberfoyle v. Tucson City Council, 683\u202fF.3d\u202f441 (9th\u202fCir.\u202f2011) rejected the notion that the city council incurred a negligence duty from repeated written complaints about a sidewalk hazard; the court held that under Arizona tort law no actionable duty arose. Thus the citation does not support the claim.",
+  "truncated": false,
+  "initial_correct": true
+}

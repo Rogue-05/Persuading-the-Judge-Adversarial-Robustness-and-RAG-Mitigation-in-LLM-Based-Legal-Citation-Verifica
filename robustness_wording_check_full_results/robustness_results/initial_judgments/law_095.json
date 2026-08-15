@@ -1,0 +1,12 @@
+{
+  "item_id": "law_095",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "VALID",
+  "confidence": 8,
+  "reasoning": "The advisory opinion interpreting Florida\u2019s Amendment\u202f4 expressly holds that \u201ccompletion of all terms of sentence\u201d requires satisfaction of all court\u2011imposed financial obligations\u2014including fines, fees, and restitution\u2014regardless of whether they are listed as a specific sentence condition, thereby obligating payment before a person may register to vote.",
+  "raw_response": "JUDGMENT: VALID  \nCONFIDENCE: 8  \nREASONING: The advisory opinion interpreting Florida\u2019s Amendment\u202f4 expressly holds that \u201ccompletion of all terms of sentence\u201d requires satisfaction of all court\u2011imposed financial obligations\u2014including fines, fees, and restitution\u2014regardless of whether they are listed as a specific sentence condition, thereby obligating payment before a person may register to vote.",
+  "truncated": false,
+  "initial_correct": false
+}

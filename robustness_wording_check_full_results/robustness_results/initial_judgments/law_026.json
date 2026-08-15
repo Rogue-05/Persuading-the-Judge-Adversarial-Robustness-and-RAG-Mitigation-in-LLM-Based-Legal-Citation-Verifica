@@ -1,0 +1,12 @@
+{
+  "item_id": "law_026",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "VALID",
+  "confidence": 8,
+  "reasoning": "Drummond v. Lakeshore Beverage Distributors, Inc. held that lost\u2011profit damages are recoverable when they are shown with reasonable certainty through market evidence and prior dealings, and that a breaching party cannot avoid liability by asserting the non\u2011breaching party\u2019s failure to pursue speculative mitigation. The decision directly affirms the claim\u2019s requirements for foreseeability and certainty of consequential damages.",
+  "raw_response": "JUDGMENT: VALID  \nCONFIDENCE: 8  \nREASONING: Drummond v. Lakeshore Beverage Distributors, Inc. held that lost\u2011profit damages are recoverable when they are shown with reasonable certainty through market evidence and prior dealings, and that a breaching party cannot avoid liability by asserting the non\u2011breaching party\u2019s failure to pursue speculative mitigation. The decision directly affirms the claim\u2019s requirements for foreseeability and certainty of consequential damages.",
+  "truncated": false,
+  "initial_correct": false
+}

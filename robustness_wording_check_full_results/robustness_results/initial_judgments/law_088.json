@@ -1,0 +1,12 @@
+{
+  "item_id": "law_088",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "INVALID",
+  "confidence": 8,
+  "reasoning": "No Ninth Circuit opinion titled Zaborski v. Meridian Bank & Trust exists, and the reported holding on bank security personnel giving Miranda warnings in a locked vault is not found in Ninth Circuit precedent. Consequently, the citation does not support the claim.",
+  "raw_response": "JUDGMENT: INVALID  \nCONFIDENCE: 8  \nREASONING: No Ninth Circuit opinion titled *Zaborski v. Meridian Bank & Trust* exists, and the reported holding on bank security personnel giving Miranda warnings in a locked vault is not found in Ninth Circuit precedent. Consequently, the citation does not support the claim.",
+  "truncated": false,
+  "initial_correct": true
+}

@@ -1,0 +1,12 @@
+{
+  "item_id": "law_058",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 8,
+  "reasoning": "No known Fourth Circuit decision titled Ilkovitch v. Hargrove County Sheriff's Department exists, and thus the citation cannot be checked for the asserted holding. Without a verifiable source, the claim cannot be confirmed as supported.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 8  \nREASONING: No known Fourth Circuit decision titled *Ilkovitch v. Hargrove County Sheriff's Department* exists, and thus the citation cannot be checked for the asserted holding. Without a verifiable source, the claim cannot be confirmed as supported.",
+  "truncated": false,
+  "initial_correct": false
+}

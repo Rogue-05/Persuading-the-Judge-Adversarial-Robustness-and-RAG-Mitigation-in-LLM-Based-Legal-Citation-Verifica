@@ -1,0 +1,12 @@
+{
+  "item_id": "law_041",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "INVALID",
+  "confidence": 8,
+  "reasoning": "Bascom v. Hargrove County Board of Supervisors, 738\u202fF.3d\u202f214 (4th Cir. 2019) does not address the burden\u2011shifting framework for public\u2011employee First Amendment retaliation claims; the opinion deals with unrelated employment\u2011law issues and contains no discussion of \u201csubstantial motivating factor\u201d or the government\u2019s preponderance\u2011of\u2011evidence burden. Consequently, the citation does not support the claim.",
+  "raw_response": "JUDGMENT: INVALID  \nCONFIDENCE: 8  \nREASONING: Bascom v. Hargrove County Board of Supervisors, 738\u202fF.3d\u202f214 (4th Cir. 2019) does not address the burden\u2011shifting framework for public\u2011employee First Amendment retaliation claims; the opinion deals with unrelated employment\u2011law issues and contains no discussion of \u201csubstantial motivating factor\u201d or the government\u2019s preponderance\u2011of\u2011evidence burden. Consequently, the citation does not support the claim.",
+  "truncated": false,
+  "initial_correct": true
+}

@@ -1,0 +1,12 @@
+{
+  "item_id": "law_023",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "VALID",
+  "confidence": 9,
+  "reasoning": "The cited decision (380\u202fF.\u202fSupp.\u202f3d\u202f1243) is a district\u2011court ruling on standing in a data\u2011breach case that held plaintiffs had an Article\u202fIII injury based on the heightened risk of identity theft, rejected the speculative bodily\u2011harm injury theory, and dismissed the over\u2011payment claim for lack of a mutual agreement to allocate payments to data security. This directly mirrors the claim\u2019s analysis.",
+  "raw_response": "JUDGMENT: VALID  \nCONFIDENCE: 9  \nREASONING: The cited decision (380\u202fF.\u202fSupp.\u202f3d\u202f1243) is a district\u2011court ruling on standing in a data\u2011breach case that held plaintiffs had an Article\u202fIII injury based on the heightened risk of identity theft, rejected the speculative bodily\u2011harm injury theory, and dismissed the over\u2011payment claim for lack of a mutual agreement to allocate payments to data security. This directly mirrors the claim\u2019s analysis.",
+  "truncated": false,
+  "initial_correct": true
+}

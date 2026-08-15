@@ -1,0 +1,12 @@
+{
+  "item_id": "law_150",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "INVALID",
+  "confidence": 9,
+  "reasoning": "Mwangi\u2011Osei v. Northwell Health Systems, 738\u202fF.3d\u202f512 (9th Cir. 2016) is an employment\u2011discrimination decision concerning a plaintiff\u2019s claim against a health\u2011care employer, not an asylum case. The opinion contains no discussion of asylum credibility, documented employment in a foreign hospital, or the need for immigration judges to consider such records, so it does not support the asserted holding.",
+  "raw_response": "JUDGMENT: INVALID  \nCONFIDENCE: 9  \nREASONING: Mwangi\u2011Osei v. Northwell Health Systems, 738\u202fF.3d\u202f512 (9th Cir. 2016) is an employment\u2011discrimination decision concerning a plaintiff\u2019s claim against a health\u2011care employer, not an asylum case. The opinion contains no discussion of asylum credibility, documented employment in a foreign hospital, or the need for immigration judges to consider such records, so it does not support the asserted holding.",
+  "truncated": false,
+  "initial_correct": true
+}

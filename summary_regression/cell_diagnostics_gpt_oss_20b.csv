@@ -1,0 +1,7 @@
+grounded,condition,n,n_c2i,c2i_rate
+False,authority,54,40,0.7407
+False,control,55,6,0.1091
+False,fabricated_citation,35,3,0.0857
+True,authority,55,18,0.3273
+True,control,52,6,0.1154
+True,fabricated_citation,39,5,0.1282

@@ -1,0 +1,12 @@
+{
+  "item_id": "law_100",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "INVALID",
+  "confidence": 9,
+  "reasoning": "No Ninth Circuit decision titled Gruvenstein v. Palantir Technologies exists; the cited reporter volume and year are inconsistent with Palantir\u2019s existence (founded 2003). Consequently the citation cannot support the claimed due\u2011process holding.",
+  "raw_response": "JUDGMENT: INVALID  \nCONFIDENCE: 9  \nREASONING: No Ninth Circuit decision titled *Gruvenstein v. Palantir Technologies* exists; the cited reporter volume and year are inconsistent with Palantir\u2019s existence (founded 2003). Consequently the citation cannot support the claimed due\u2011process holding.",
+  "truncated": false,
+  "initial_correct": true
+}

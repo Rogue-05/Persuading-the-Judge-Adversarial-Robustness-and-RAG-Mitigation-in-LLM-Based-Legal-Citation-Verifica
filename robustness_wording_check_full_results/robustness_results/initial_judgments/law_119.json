@@ -1,0 +1,12 @@
+{
+  "item_id": "law_119",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "VALID",
+  "confidence": 8,
+  "reasoning": "The Federal Circuit in Ederholm v. Synaptix Technologies held that a patent holder need not show direct commercial injury; the defendant\u2019s internal, non\u2011public use of the patented semiconductor encoding process satisfied the \u201cuse\u201d requirement of 35\u202fU.S.C.\u202f\u00a7\u202f271(a), constituting per se infringement. This directly supports the claim.",
+  "raw_response": "JUDGMENT: VALID  \nCONFIDENCE: 8  \nREASONING: The Federal Circuit in *Ederholm v. Synaptix Technologies* held that a patent holder need not show direct commercial injury; the defendant\u2019s internal, non\u2011public use of the patented semiconductor encoding process satisfied the \u201cuse\u201d requirement of 35\u202fU.S.C.\u202f\u00a7\u202f271(a), constituting per se infringement. This directly supports the claim.",
+  "truncated": false,
+  "initial_correct": false
+}

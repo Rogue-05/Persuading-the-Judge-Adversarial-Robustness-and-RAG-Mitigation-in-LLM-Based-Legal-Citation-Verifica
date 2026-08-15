@@ -1,0 +1,12 @@
+{
+  "item_id": "law_011",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 8,
+  "reasoning": "The Okafor v. Pinnacle Transit Authority decision does not address the issue of subjective supervisory evaluations as the sole basis for promotion or the burden\u2011shifting rule described. It deals with a different employment\u2011discrimination context, so the cited case does not provide the asserted holding.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 8  \nREASONING: The Okafor v. Pinnacle Transit Authority decision does not address the issue of subjective supervisory evaluations as the sole basis for promotion or the burden\u2011shifting rule described. It deals with a different employment\u2011discrimination context, so the cited case does not provide the asserted holding.",
+  "truncated": false,
+  "initial_correct": false
+}

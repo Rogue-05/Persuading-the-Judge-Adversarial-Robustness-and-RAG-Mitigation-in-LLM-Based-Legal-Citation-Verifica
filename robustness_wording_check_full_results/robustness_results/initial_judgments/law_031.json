@@ -1,0 +1,12 @@
+{
+  "item_id": "law_031",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 8,
+  "reasoning": "The cited reporter (388 F. Supp. 3d 1158) is a district\u2011court opinion that does not contain the detailed holding described in the claim regarding \u00a7\u202f148(a)(1), the timing of excessive force, and qualified\u2011immunity analysis. No known precedent in that reporter articulates the precise rule cited, so the citation cannot be verified as supporting the claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 8  \nREASONING: The cited reporter (388 F. Supp. 3d 1158) is a district\u2011court opinion that does not contain the detailed holding described in the claim regarding \u00a7\u202f148(a)(1), the timing of excessive force, and qualified\u2011immunity analysis. No known precedent in that reporter articulates the precise rule cited, so the citation cannot be verified as supporting the claim.",
+  "truncated": false,
+  "initial_correct": false
+}

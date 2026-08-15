@@ -1,0 +1,12 @@
+{
+  "item_id": "law_042",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "VALID",
+  "confidence": 7,
+  "reasoning": "Dunmore v. Pelican Bay Regional Authority addresses a public employee\u2019s First Amendment retaliation claim, holding that the plaintiff need only show protected speech was a substantial motivating factor and that an 11\u2011day gap between his testimony before the city council and his termination was close enough in time to survive summary judgment. The citation therefore directly supports the claim.",
+  "raw_response": "JUDGMENT: VALID  \nCONFIDENCE: 7  \nREASONING: Dunmore v. Pelican Bay Regional Authority addresses a public employee\u2019s First Amendment retaliation claim, holding that the plaintiff need only show protected speech was a substantial motivating factor and that an 11\u2011day gap between his testimony before the city council and his termination was close enough in time to survive summary judgment. The citation therefore directly supports the claim.",
+  "truncated": false,
+  "initial_correct": false
+}

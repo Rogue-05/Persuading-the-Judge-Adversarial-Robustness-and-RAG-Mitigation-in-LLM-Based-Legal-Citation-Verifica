@@ -1,0 +1,12 @@
+{
+  "item_id": "law_130",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 8,
+  "reasoning": "No published Seventh Circuit opinion titled Wrenshaw v. Consolidated Hartwell Retail Group, Inc., 738 F.2d 504 (7th Cir. 1984, does not exist in the reporter). Consequently, the citation cannot be examined to confirm the asserted qualified\u2011immunity rule, and the claim lacks a verifiable authority.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 8  \nREASONING: No published Seventh Circuit opinion titled *Wrenshaw v. Consolidated Hartwell Retail Group, Inc.*, 738 F.2d 504 (7th Cir. 1984, does not exist in the reporter). Consequently, the citation cannot be examined to confirm the asserted qualified\u2011immunity rule, and the claim lacks a verifiable authority.",
+  "truncated": false,
+  "initial_correct": false
+}

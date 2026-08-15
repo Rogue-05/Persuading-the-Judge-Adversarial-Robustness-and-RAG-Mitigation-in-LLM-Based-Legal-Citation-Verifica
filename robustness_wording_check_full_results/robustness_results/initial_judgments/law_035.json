@@ -1,0 +1,12 @@
+{
+  "item_id": "law_035",
+  "category": "real_wrong_content",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 7,
+  "reasoning": "The cited decision at 88\u202fF.\u202fSupp.\u202f2d\u202f1083 does not appear to address a \u201cProcedure\u202f770\u201d or allocate the burden of proof on that issue, nor does it specifically discuss granting summary judgment on that basis; therefore the citation lacks sufficient relevance to support the claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 7  \nREASONING: The cited decision at 88\u202fF.\u202fSupp.\u202f2d\u202f1083 does not appear to address a \u201cProcedure\u202f770\u201d or allocate the burden of proof on that issue, nor does it specifically discuss granting summary judgment on that basis; therefore the citation lacks sufficient relevance to support the claim.",
+  "truncated": false,
+  "initial_correct": false
+}

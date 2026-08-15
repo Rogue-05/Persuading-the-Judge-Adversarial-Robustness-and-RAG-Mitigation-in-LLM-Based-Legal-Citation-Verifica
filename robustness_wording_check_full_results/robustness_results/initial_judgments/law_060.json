@@ -1,0 +1,12 @@
+{
+  "item_id": "law_060",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "VALID",
+  "confidence": 7,
+  "reasoning": "The decision reported at 805\u202fS.E.2d\u202f371 held that the court could grant summary judgment on the negligent\u2011misrepresentation claim but could not do so on the negligence claim because the record showed a genuine dispute over whether the insurance agent owed a duty to procure coverage for the vacant property. This directly matches the claim\u2019s description.",
+  "raw_response": "JUDGMENT: VALID  \nCONFIDENCE: 7  \nREASONING: The decision reported at 805\u202fS.E.2d\u202f371 held that the court could grant summary judgment on the negligent\u2011misrepresentation claim but could not do so on the negligence claim because the record showed a genuine dispute over whether the insurance agent owed a duty to procure coverage for the vacant property. This directly matches the claim\u2019s description.",
+  "truncated": false,
+  "initial_correct": true
+}

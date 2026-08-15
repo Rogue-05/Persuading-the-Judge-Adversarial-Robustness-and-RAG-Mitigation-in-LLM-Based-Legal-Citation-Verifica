@@ -1,0 +1,12 @@
+{
+  "item_id": "law_103",
+  "category": "fabricated",
+  "ground_truth": "invalid",
+  "ground_truth_normalized": "INVALID",
+  "judgment": "INVALID",
+  "confidence": 8,
+  "reasoning": "Wolterbeck v. Pinnacle Retail Group, 738 F.2d 504 (7th Cir. 1984) held that a private retail employer\u2019s termination of an employee did not implicate a protected liberty interest under the Fourteenth Amendment because the employer\u2019s actions were not sufficiently entwined with state licensing or regulatory schemes. The court rejected the requirement of a pre\u2011termination hearing, contrary to the claim.",
+  "raw_response": "JUDGMENT: INVALID  \nCONFIDENCE: 8  \nREASONING: Wolterbeck v. Pinnacle Retail Group, 738 F.2d 504 (7th Cir. 1984) held that a private retail employer\u2019s termination of an employee did not implicate a protected liberty interest under the Fourteenth Amendment because the employer\u2019s actions were not sufficiently entwined with state licensing or regulatory schemes. The court rejected the requirement of a pre\u2011termination hearing, contrary to the claim.",
+  "truncated": false,
+  "initial_correct": true
+}

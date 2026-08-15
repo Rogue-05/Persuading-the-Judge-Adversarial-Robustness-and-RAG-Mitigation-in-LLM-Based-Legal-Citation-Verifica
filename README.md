@@ -1,6 +1,6 @@
 # Persuading the Judge: Adversarial Robustness and RAG Mitigation in LLM-Based Legal Citation Verification
 
-> NLLP Workshop @ EMNLP 2026 submission
+
 
 ## Overview
 
@@ -131,19 +131,6 @@ python lr_test_model1_vs_model2.py
 | Llama | Authority vs Control | +20.1pp | −1.3pp | Ungr. only |
 | Llama | Fab. Cit. vs Control | +16.5pp | +7.7pp | Ungr. only |
 | Cross-Family | Authority vs Control | +27.4pp | +39.7pp | **Yes** (both) |
-
-## Citation
-
-If you find this work or dataset useful, please cite our paper (under double-blind review):
-
-```bibtex
-@article{anonymous2026persuading,
-  title={Persuading the Judge: Adversarial Robustness and RAG Mitigation in LLM-Based Legal Citation Verification},
-  author={Anonymous Authors},
-  journal={Under review at NLLP Workshop @ EMNLP 2026},
-  year={2026}
-}
-```
 
 ## License
 

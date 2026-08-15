@@ -1,0 +1,12 @@
+{
+  "item_id": "law_092",
+  "category": "valid",
+  "ground_truth": "valid",
+  "ground_truth_normalized": "VALID",
+  "judgment": "UNSUPPORTED",
+  "confidence": 7,
+  "reasoning": "The citation \u201c2019 Ohio 5380\u201d is a Ohio Supreme Court opinion that does not address Ohio Revised Code \u00a7\u00a7\u202f3107.07(K) or 3107.11(B) or the specific equal\u2011protection and due\u2011process arguments presented. Consequently, the case provides no basis to confirm or refute the claim.",
+  "raw_response": "JUDGMENT: UNSUPPORTED  \nCONFIDENCE: 7  \nREASONING: The citation \u201c2019 Ohio 5380\u201d is a Ohio Supreme Court opinion that does not address Ohio Revised Code \u00a7\u00a7\u202f3107.07(K) or 3107.11(B) or the specific equal\u2011protection and due\u2011process arguments presented. Consequently, the case provides no basis to confirm or refute the claim.",
+  "truncated": false,
+  "initial_correct": false
+}
