@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the dataset, experiment harnesses, evaluation pipelines, and results for studying how adversarial persuasion attacks degrade LLM-based legal citation verifiers, and whether retrieval-augmented generation (RAG) grounding can mitigate these vulnerabilities.
+This repository contains the benchmark dataset, multi-agent evaluation harnesses, statistical pipelines, and experimental results for studying how adversarial persuasion attacks degrade LLM-based legal citation verifiers, and whether retrieval-augmented generation (RAG) grounding can mitigate these vulnerabilities.
 
 **Key Findings:**
 - **Authority persuasion significantly degrades verifiers**: In within-model logistic regressions, authority appeals massively increase correct-to-incorrect flip odds in GPT-OSS 20B ($\text{OR} = 23.333, p < 0.0001$) and Llama 70B ($\text{OR} = 11.953, p = 0.0029$).
@@ -16,56 +16,61 @@ This repository contains the dataset, experiment harnesses, evaluation pipelines
 
 ```
 NLLP/
-├── legal_dataset.json              # Benchmark dataset (176 items, balanced across 3 classes)
-├── build_dataset.py                # Dataset extraction & generation pipeline (CourtListener + Claude + Gemini)
-├── validate_dataset.py             # Dataset schema validation & QA consistency checks
+├── data/                               # Benchmark and supplementary dataset files
+│   ├── legal_dataset.json              # Benchmark dataset (176 items, balanced across 3 classes)
+│   ├── errors_legal_dataset.json       # Items flagged during dataset QA review
+│   └── extra_fabricated_cases.json     # Additional synthetic cases for class balance
 │
-├── 02_main_experiment_openrouter.ipynb   # Within-family experiments (Llama & GPT-OSS)
-├── 03_crossfamily_llama_v_gptoss.ipynb   # Cross-family experiment (Llama 70B verifier vs. GPT-OSS 120B adversary)
-├── robustness_wording_check.ipynb        # Prompt wording & register robustness check
+├── notebooks/                          # Interactive experiment notebooks
+│   ├── 02_main_experiment_openrouter.ipynb   # Within-family experiments (Llama & GPT-OSS)
+│   ├── 03_crossfamily_llama_v_gptoss.ipynb   # Cross-family experiment (Llama 70B × GPT-OSS 120B)
+│   └── robustness_wording_check.ipynb        # Prompt register & wording robustness check
 │
-├── compute_metrics.py              # Metrics computation (True ASR, CW-ASR, FPR, FNR, confidence deltas)
-├── compute_per_pair_breakdown.py   # Per-model-pair and per-arm breakdown tables
-├── fit_within_family_regression.py # Within-model logistic regressions (Llama 70B, GPT-OSS 120B, GPT-OSS 20B)
-├── fit_logistic_regression.py      # Family-pooled logistic regressions (Models 1, 2, 3)
-├── lr_test_model1_vs_model2.py     # Likelihood ratio test & cluster-robust bootstrap
-├── verify_epistemic_stats.py       # Audits confidence deltas and epistemic deference on flip traces
-├── generate_paper_figures.py       # Generates publication figures from summary CSVs
-├── reprocess_failed_trials.py      # Retries failed/truncated API calls with token budget guards
-├── rescue_parser_failures.py       # Offline parser recovery & response extraction
-├── fix_parser.py                   # Response parser normalization routines
+├── scripts/                            # Dataset generation, evaluation, and analysis scripts
+│   ├── build_dataset.py                # Dataset extraction & generation pipeline (CourtListener + Claude + Gemini)
+│   ├── validate_dataset.py             # Dataset schema validation & QA consistency checks
+│   ├── check_dataset_counts.py         # Topic and category balance counter
+│   ├── build_dataset_4keys.py          # 4-key variant dataset builder
+│   ├── compute_metrics.py              # Metrics computation (True ASR, CW-ASR, FPR, FNR)
+│   ├── compute_per_pair_breakdown.py   # Per-model-pair and per-arm breakdown tables
+│   ├── fit_within_family_regression.py # Within-model logistic regressions (Llama 70B, GPT-OSS 120B, GPT-OSS 20B)
+│   ├── fit_logistic_regression.py      # Family-pooled logistic regressions (Models 1, 2, 3)
+│   ├── lr_test_model1_vs_model2.py     # Likelihood ratio test & cluster bootstrap
+│   ├── verify_epistemic_stats.py       # Epistemic deference & confidence shift auditor
+│   ├── generate_paper_figures.py       # Generates publication PDF figures
+│   ├── reprocess_failed_trials.py      # Retries failed/truncated API calls with token budget guards
+│   ├── rescue_parser_failures.py       # Offline response parser recovery
+│   └── fix_parser.py                   # Parser normalization routines
 │
-├── results_gptoss_full_run_rescued/    # GPT-OSS within-family experiment results (rescued, canonical)
-│   ├── main/                           # Ungrounded trial JSONs (1,056 trials)
-│   ├── mitigation/                     # Grounded trial JSONs (678 trials)
-│   └── summary/                        # Computed summary CSVs & metrics
+├── results/                            # Experimental trial records and summary outputs
+│   ├── gptoss_within_family/           # GPT-OSS 20B/120B within-family experiment results
+│   │   ├── main/                       # Ungrounded trial JSONs (1,056 trials)
+│   │   ├── mitigation/                 # Grounded trial JSONs (678 trials)
+│   │   └── summary/                    # Computed summary CSVs & metrics
+│   ├── llama_within_family/            # Llama 8B/70B within-family experiment results
+│   │   ├── results/main/               # Ungrounded trial JSONs (1,056 trials)
+│   │   ├── results/mitigation/         # Grounded trial JSONs (678 trials)
+│   │   └── results/summary/            # Computed summary CSVs & metrics
+│   ├── crossfamily_llama_gptoss/       # Cross-family experiment results (Llama 70B × GPT-OSS 120B)
+│   │   ├── main/                       # Ungrounded trial JSONs (528 trials)
+│   │   ├── mitigation/                 # Grounded trial JSONs (339 trials)
+│   │   └── summary/                    # Computed cross-family summary CSVs
+│   ├── robustness_wording/             # Prompt wording robustness experiment
+│   │   └── robustness_results/         # 280 trial JSONs across 7 prompt templates
+│   │       └── summary/                # Wording check summary CSVs
+│   └── regression_tables/              # Regression models, LR tests, and cell diagnostics
+│       ├── logistic_regression_llama_70b.csv
+│       ├── logistic_regression_gpt_oss_120b.csv
+│       ├── logistic_regression_gpt_oss_20b.csv
+│       ├── logistic_regression_model2_2way_interacted.csv
+│       ├── logistic_regression_model1_3way_interacted.csv
+│       ├── logistic_regression_model3_ungrounded.csv
+│       ├── lr_test_model1_vs_model2.csv
+│       ├── lr_test_bootstrap_distribution.csv
+│       ├── per_pair_per_arm_breakdown.csv
+│       └── cw_por_confidence_weighted_metrics.csv
 │
-├── results_llama_full_run_rescued/     # Llama within-family experiment results (rescued, canonical)
-│   ├── results/main/                   # Ungrounded trial JSONs (1,056 trials)
-│   ├── results/mitigation/             # Grounded trial JSONs (678 trials)
-│   └── results/summary/                # Computed summary CSVs & metrics
-│
-├── results_llama_gptoss_cross/         # Cross-family experiment results (Llama 70B × GPT-OSS 120B)
-│   ├── main/                           # Ungrounded trial JSONs (528 trials)
-│   ├── mitigation/                     # Grounded trial JSONs (339 trials)
-│   └── summary/                        # Computed cross-family summary CSVs
-│
-├── robustness_wording_check_full_results/ # Prompt wording robustness experiment
-│   └── robustness_results/             # 280 trial JSONs across 7 prompt templates
-│       └── summary/                    # Wording check summary CSVs
-│
-├── summary_regression/                 # Logistic regression tables & diagnostics
-│   ├── logistic_regression_llama_70b.csv
-│   ├── logistic_regression_gpt_oss_120b.csv
-│   ├── logistic_regression_gpt_oss_20b.csv
-│   ├── logistic_regression_model2_2way_interacted.csv
-│   ├── logistic_regression_model1_3way_interacted.csv
-│   ├── logistic_regression_model3_ungrounded.csv
-│   ├── cell_diagnostics_*.csv
-│   ├── lr_test_model1_vs_model2.csv
-│   ├── lr_test_bootstrap_distribution.csv
-│   └── cw_por_confidence_weighted_metrics.csv
-│
+├── README.md
 └── .gitignore
 ```
 
@@ -73,7 +78,7 @@ NLLP/
 
 ## Dataset
 
-The benchmark dataset (`legal_dataset.json`) contains **176 items** across three classes:
+The benchmark dataset (`data/legal_dataset.json`) contains **176 items** across three classes:
 
 | Class | Items | Description | QA Validation |
 |:---|:---:|:---|:---|
@@ -123,38 +128,48 @@ $3{,}468$ within-family trials + $867$ cross-family trials:
 ### 1. Compute summary metrics from raw trial JSONs
 ```bash
 # GPT-OSS within-family
-python compute_metrics.py \
-  --main-dir results_gptoss_full_run_rescued/main \
-  --mitigation-dir results_gptoss_full_run_rescued/mitigation
+python scripts/compute_metrics.py \
+  --main-dir results/gptoss_within_family/main \
+  --mitigation-dir results/gptoss_within_family/mitigation
 
 # Llama within-family
-python compute_metrics.py \
-  --main-dir results_llama_full_run_rescued/results/main \
-  --mitigation-dir results_llama_full_run_rescued/results/mitigation
+python scripts/compute_metrics.py \
+  --main-dir results/llama_within_family/results/main \
+  --mitigation-dir results/llama_within_family/results/mitigation
 ```
 
 ### 2. Fit within-model logistic regressions (with item clustering)
 ```bash
-python fit_within_family_regression.py
+python scripts/fit_within_family_regression.py
 ```
 
-### 3. Fit family-pooled reference regressions & Likelihood Ratio test
+### 3. Compute per-pair & per-arm breakdown tables
+```bash
+python scripts/compute_per_pair_breakdown.py
+```
+
+### 4. Fit family-pooled reference regressions & Likelihood Ratio test
 ```bash
 # Fit Models 1, 2, and 3
-python fit_logistic_regression.py
+python scripts/fit_logistic_regression.py
 
 # Likelihood Ratio test (Model 1 vs. Model 2 with 1,000 cluster bootstrap resamples)
-python lr_test_model1_vs_model2.py
+python scripts/lr_test_model1_vs_model2.py
 ```
 
-### 4. Verify epistemic deference & confidence shift stats
+### 5. Verify epistemic deference & confidence shift stats
 ```bash
-python verify_epistemic_stats.py
+python scripts/verify_epistemic_stats.py
 ```
 
-### 5. Generate publication figures
+### 6. Verify dataset topic & category balance
 ```bash
-python generate_paper_figures.py
+python scripts/check_dataset_counts.py
+```
+
+### 7. Generate publication figures
+```bash
+python scripts/generate_paper_figures.py
 ```
 
 ---

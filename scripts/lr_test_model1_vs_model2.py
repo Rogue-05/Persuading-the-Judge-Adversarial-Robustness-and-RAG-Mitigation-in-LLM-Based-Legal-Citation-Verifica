@@ -216,13 +216,24 @@ def cluster_bootstrap_pvalue(X1, X2, y, cluster_ids, observed_lr, n_boot=1000, s
     return boot_p, boot_lrs_valid, n_valid, n_failed
 
 
+def find_dir(rel_path):
+    for prefix in ["results", ".", ".."]:
+        p = os.path.join(prefix, rel_path)
+        if os.path.isdir(p):
+            return p
+    return rel_path
+
+
 def main():
     parser = argparse.ArgumentParser(description="LR test: Model 1 (3-way) vs Model 2 (2-way, nested).")
-    parser.add_argument("--gptoss-main", default="results_gptoss_full_run_rescued/main")
-    parser.add_argument("--gptoss-mit", default="results_gptoss_full_run_rescued/mitigation")
-    parser.add_argument("--llama-main", default="results_llama_full_run_rescued/results/main")
-    parser.add_argument("--llama-mit", default="results_llama_full_run_rescued/results/mitigation")
-    parser.add_argument("--output-dir", default=".")
+    parser.add_argument("--gptoss-main", default=find_dir("gptoss_within_family/main"))
+    parser.add_argument("--gptoss-mit", default=find_dir("gptoss_within_family/mitigation"))
+    parser.add_argument("--llama-main", default=find_dir("llama_within_family/results/main"))
+    parser.add_argument("--llama-mit", default=find_dir("llama_within_family/results/mitigation"))
+    default_out = find_dir("regression_tables")
+    if not os.path.isdir(default_out):
+        default_out = "results/regression_tables"
+    parser.add_argument("--output-dir", default=default_out)
     parser.add_argument("--n-boot", type=int, default=1000)
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()

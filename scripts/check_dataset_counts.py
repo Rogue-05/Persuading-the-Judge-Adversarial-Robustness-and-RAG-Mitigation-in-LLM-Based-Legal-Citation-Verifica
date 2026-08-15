@@ -1,9 +1,12 @@
+import os
 import json
 from collections import defaultdict
 
 def main():
+    paths = ["data/legal_dataset.json", "../data/legal_dataset.json", "legal_dataset.json"]
+    dataset_path = next((p for p in paths if os.path.exists(p)), "data/legal_dataset.json")
     try:
-        with open("legal_dataset.json", "r") as f:
+        with open(dataset_path, "r") as f:
             data = json.load(f)
             
         items = data.get("items", [])

@@ -199,20 +199,29 @@ def fit_logit_clustered(X, y, cluster_ids, var_names, model_label=""):
     return res_df, beta, V_cluster, converged, n_iter
 
 
-# === Main ===
+def find_dir(rel_path):
+    for prefix in ["results", ".", ".."]:
+        p = os.path.join(prefix, rel_path)
+        if os.path.isdir(p):
+            return p
+    return rel_path
+
 
 def main():
     parser = argparse.ArgumentParser(
         description="Fit logistic regression models with cluster-robust SEs by item_id.")
     parser.add_argument("--gptoss-main",
-                        default="results_gptoss_full_run_rescued/main")
+                        default=find_dir("gptoss_within_family/main"))
     parser.add_argument("--gptoss-mit",
-                        default="results_gptoss_full_run_rescued/mitigation")
+                        default=find_dir("gptoss_within_family/mitigation"))
     parser.add_argument("--llama-main",
-                        default="results_llama_full_run_rescued/results/main")
+                        default=find_dir("llama_within_family/results/main"))
     parser.add_argument("--llama-mit",
-                        default="results_llama_full_run_rescued/results/mitigation")
-    parser.add_argument("--output-dir", default=".")
+                        default=find_dir("llama_within_family/results/mitigation"))
+    default_out = find_dir("regression_tables")
+    if not os.path.isdir(default_out):
+        default_out = "results/regression_tables"
+    parser.add_argument("--output-dir", default=default_out)
     args = parser.parse_args()
 
     # ── Load ──

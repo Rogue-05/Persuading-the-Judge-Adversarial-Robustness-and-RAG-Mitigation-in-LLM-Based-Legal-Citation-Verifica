@@ -33,8 +33,9 @@ COLORS = {
     'ungrounded': '#EF4444',
     'grounded': '#22C55E',
 }
+import os
 
-outdir = '/Users/rohannrahulshah/College/NLLP'
+outdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) if os.path.basename(os.path.dirname(os.path.abspath(__file__))) == "scripts" else "."
 
 # ════════════════════════════════════════════════════════════════
 # FIGURE 1: Confidence Profile — True ASR vs CW-ASR

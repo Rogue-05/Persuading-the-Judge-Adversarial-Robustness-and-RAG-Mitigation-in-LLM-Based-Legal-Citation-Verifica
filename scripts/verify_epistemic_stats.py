@@ -30,15 +30,22 @@ def result_to_row(r, grounded_override=None):
         "final_confidence": r.get("final_confidence"),
     }
 
+def find_dir(rel_path):
+    for prefix in ["results", ".", ".."]:
+        p = os.path.join(prefix, rel_path)
+        if os.path.isdir(p):
+            return p
+    return rel_path
+
 def main():
     rows = []
-    for r in load_results("results_gptoss_full_run_rescued/main"):
+    for r in load_results(find_dir("gptoss_within_family/main")):
         rows.append(result_to_row(r, grounded_override=False))
-    for r in load_results("results_gptoss_full_run_rescued/mitigation"):
+    for r in load_results(find_dir("gptoss_within_family/mitigation")):
         rows.append(result_to_row(r, grounded_override=True))
-    for r in load_results("results_llama_full_run_rescued/results/main"):
+    for r in load_results(find_dir("llama_within_family/results/main")):
         rows.append(result_to_row(r, grounded_override=False))
-    for r in load_results("results_llama_full_run_rescued/results/mitigation"):
+    for r in load_results(find_dir("llama_within_family/results/mitigation")):
         rows.append(result_to_row(r, grounded_override=True))
         
     df = pd.DataFrame(rows)

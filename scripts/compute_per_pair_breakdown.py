@@ -3,13 +3,25 @@
 Compute per-verifier/adversary-pair, per-grounding-arm true_ASR breakdown.
 This gives us the table the mentor wants: no pooling across size, family, or grounding arm.
 """
-import pandas as pd
+import os
 import sys
+import pandas as pd
+
+def find_file(rel_path):
+    for prefix in [".", "..", "results"]:
+        p = os.path.join(prefix, rel_path)
+        if os.path.exists(p):
+            return p
+    return rel_path
 
 # Load all trial-level data
-llama = pd.read_csv('results_llama_full_run_rescued/results/summary/llama_trial_level_for_plots.csv')
-gptoss = pd.read_csv('results_gptoss_full_run_rescued/summary/gptoss_trial_level_for_plots.csv')
-cross = pd.read_csv('results_llama_gptoss_cross/summary/crossfamily_trial_level_for_plots.csv')
+llama_path = find_file('llama_within_family/results/summary/llama_trial_level_for_plots.csv')
+gptoss_path = find_file('gptoss_within_family/summary/gptoss_trial_level_for_plots.csv')
+cross_path = find_file('crossfamily_llama_gptoss/summary/crossfamily_trial_level_for_plots.csv')
+
+llama = pd.read_csv(llama_path)
+gptoss = pd.read_csv(gptoss_path)
+cross = pd.read_csv(cross_path)
 
 all_data = pd.concat([llama, gptoss, cross], ignore_index=True)
 
@@ -101,5 +113,10 @@ for _, r in gr.iterrows():
     print(f"{r['verifier']:<16} {r['adversary']:<16} {r['control']:>9.1%} {r['authority']:>9.1%} {r['net_auth_ctrl']:>+9.1%} {int(r['n_ctrl']):>7} {int(r['n_auth']):>7}")
 
 # Save full breakdown
-pivot.to_csv('summary_regression/per_pair_per_arm_breakdown.csv', index=False)
-print(f"\nSaved: summary_regression/per_pair_per_arm_breakdown.csv")
+out_dir = find_file('regression_tables')
+if not os.path.exists(out_dir):
+    out_dir = 'results/regression_tables'
+os.makedirs(out_dir, exist_ok=True)
+out_csv = os.path.join(out_dir, 'per_pair_per_arm_breakdown.csv')
+pivot.to_csv(out_csv, index=False)
+print(f"\nSaved: {out_csv}")

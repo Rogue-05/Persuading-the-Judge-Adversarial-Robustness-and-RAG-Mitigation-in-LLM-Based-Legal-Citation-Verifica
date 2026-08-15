@@ -16,7 +16,14 @@ from functools import wraps
 
 load_dotenv()
 
-DATASET_FILE = "legal_dataset.json"
+def find_dataset(filename="legal_dataset.json"):
+    for prefix in ["data", "../data", "."]:
+        p = os.path.join(prefix, filename)
+        if os.path.exists(p):
+            return p
+    return os.path.join("data", filename)
+
+DATASET_FILE = find_dataset("legal_dataset.json")
 REPORT_FILE = "qa_validation_report.json"
 
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")

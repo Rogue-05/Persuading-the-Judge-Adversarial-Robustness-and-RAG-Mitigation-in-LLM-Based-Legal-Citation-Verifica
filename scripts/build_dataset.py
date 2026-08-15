@@ -36,7 +36,7 @@ np.random.seed(SEED)
 
 # ── CONFIG ────────────────────────────────────────────────
 COURTLISTENER_BASE = "https://www.courtlistener.com/api/rest/v4"
-OUTPUT_FILE = "legal_dataset.json"
+OUTPUT_FILE = "data/legal_dataset.json" if os.path.exists("data") or os.path.exists("../data") else "legal_dataset.json"
 
 LLM_PROVIDER = "anthropic"
 QA_PROVIDER = "gemini"
@@ -45,15 +45,7 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 
-COURTLISTENER_API_KEYS = [
-    os.environ.get("COURTLISTENER_API_KEY_1", ""),
-    os.environ.get("COURTLISTENER_API_KEY_2", ""),
-    os.environ.get("COURTLISTENER_API_KEY_3", ""),
-    os.environ.get("COURTLISTENER_API_KEY_4", ""),
-]
-COURTLISTENER_API_KEYS = [k for k in COURTLISTENER_API_KEYS if k]
-if not COURTLISTENER_API_KEYS and os.environ.get("COURTLISTENER_API_KEY", ""):
-    COURTLISTENER_API_KEYS = [os.environ.get("COURTLISTENER_API_KEY", "")]
+COURTLISTENER_API_KEY = os.environ.get("COURTLISTENER_API_KEY", "")
 
 GENERATION_MODEL = "claude-sonnet-4-6"
 
@@ -130,8 +122,8 @@ retry_stats = {
 # ── GLOBALS ───────────────────────────────────────────────
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"})
-if COURTLISTENER_API_KEYS:
-    SESSION.headers.update({"Authorization": f"Token {COURTLISTENER_API_KEYS[0]}"})
+if COURTLISTENER_API_KEY:
+    SESSION.headers.update({"Authorization": f"Token {COURTLISTENER_API_KEY}"})
 
 # ── COURTLISTENER SEARCH ──────────────────────────────────
 @with_backoff(max_retries=8, base_delay=2.0, max_delay=60.0)
@@ -696,33 +688,7 @@ def call_with_fallback(func, *args, **kwargs):
             print(f"\n[FATAL] CourtListener servers are hanging (ReadTimeout). Aborting early to save progress.")
             raise RuntimeError("FATAL_READ_TIMEOUT")
             
-        if "Authorization" in SESSION.headers and COURTLISTENER_API_KEYS:
-            current_token = SESSION.headers.get("Authorization", "").replace("Token ", "")
-            try:
-                current_idx = COURTLISTENER_API_KEYS.index(current_token)
-            except ValueError:
-                current_idx = -1
-
-            # Try remaining keys
-            for offset in range(1, len(COURTLISTENER_API_KEYS)):
-                next_idx = (current_idx + offset) % len(COURTLISTENER_API_KEYS)
-                next_key = COURTLISTENER_API_KEYS[next_idx]
-                print(f"\n[WARNING] Key {current_idx+1} exhausted ({type(e).__name__}). Trying Key {next_idx+1}...")
-                SESSION.headers.update({"Authorization": f"Token {next_key}"})
-                try:
-                    return func(*args, **kwargs)
-                except requests.exceptions.RequestException:
-                    continue
-
-            # All keys exhausted, try anonymous
-            print(f"\n[WARNING] All API keys exhausted. Falling back to anonymous requests.")
-            del SESSION.headers["Authorization"]
-            try:
-                return func(*args, **kwargs)
-            except requests.exceptions.RequestException:
-                print(f"\n[FATAL] Anonymous API also failed ({type(e).__name__}).")
-                raise RuntimeError("API_EXHAUSTED")
-        elif "Authorization" in SESSION.headers:
+        if "Authorization" in SESSION.headers:
             print(f"\n[WARNING] CourtListener API key exhausted ({type(e).__name__}). Falling back to anonymous requests.")
             del SESSION.headers["Authorization"]
             return func(*args, **kwargs)
@@ -777,18 +743,12 @@ def build_dataset(items_per_topic=5):
             print(f"\n=== Topic: {topic} (ALREADY COMPLETED, SKIPPING) ===")
             continue
 
-        if COURTLISTENER_API_KEYS:
-            key_index = (topic_index // 2) % len(COURTLISTENER_API_KEYS)
-            current_key = COURTLISTENER_API_KEYS[key_index]
-            SESSION.headers.update({"Authorization": f"Token {current_key}"})
-            print(f"\n=== Topic: {topic} [Using API Key {key_index + 1}/{len(COURTLISTENER_API_KEYS)}] ===")
-        else:
-            print(f"\n=== Topic: {topic} ===")
+        print(f"\n=== Topic: {topic} ===")
             
         time.sleep(10) # Prevent rapid-fire search limits between topics
         
         try:
-            cases = call_with_fallback(search_cases, topic, max_results=100, retry_stats=retry_stats)
+            cases = call_with_fallback(search_cases, topic, max_results=20, retry_stats=retry_stats)
             build_stats["retrieved_cases"] += len(cases)
 
             # 1. Generate VALID cases

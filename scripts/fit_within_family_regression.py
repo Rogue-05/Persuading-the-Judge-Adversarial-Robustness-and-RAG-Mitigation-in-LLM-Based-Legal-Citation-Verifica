@@ -117,21 +117,32 @@ def fit_logit_clustered(X, y, cluster_ids, var_names, model_label=""):
     }), converged, G
 
 
+def find_dir(rel_path):
+    for prefix in ["results", ".", ".."]:
+        p = os.path.join(prefix, rel_path)
+        if os.path.isdir(p):
+            return p
+    return rel_path
+
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output-dir", default="summary_regression")
+    default_out = find_dir("regression_tables")
+    if not os.path.isdir(default_out):
+        default_out = "results/regression_tables"
+    parser.add_argument("--output-dir", default=default_out)
     args = parser.parse_args()
     os.makedirs(args.output_dir, exist_ok=True)
 
     # Load all trials
     rows = []
-    for r in load_results("results_gptoss_full_run_rescued/main"):
+    for r in load_results(find_dir("gptoss_within_family/main")):
         rows.append(result_to_row(r, grounded_override=False))
-    for r in load_results("results_gptoss_full_run_rescued/mitigation"):
+    for r in load_results(find_dir("gptoss_within_family/mitigation")):
         rows.append(result_to_row(r, grounded_override=True))
-    for r in load_results("results_llama_full_run_rescued/results/main"):
+    for r in load_results(find_dir("llama_within_family/results/main")):
         rows.append(result_to_row(r, grounded_override=False))
-    for r in load_results("results_llama_full_run_rescued/results/mitigation"):
+    for r in load_results(find_dir("llama_within_family/results/mitigation")):
         rows.append(result_to_row(r, grounded_override=True))
 
     df = pd.DataFrame(rows)
